@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="USC logo outline black and white">
+  <defs>
+    <filter id="outlineBW" x="-20%" y="-20%" width="140%" height="140%">
+      <!-- Convert to grayscale -->
+      <feColorMatrix type="saturate" values="0" result="gray"/>
+      <!-- Detect edges -->
+      <feConvolveMatrix in="gray" order="3" kernelMatrix="-1 -1 -1 -1 8 -1 -1 -1 -1" divisor="1" bias="0" result="edges"/>
+      <!-- Increase contrast for clean lines -->
+      <feComponentTransfer in="edges" result="highContrast">
+        <feFuncR type="table" tableValues="0 0 0 1 1"/>
+        <feFuncG type="table" tableValues="0 0 0 1 1"/>
+        <feFuncB type="table" tableValues="0 0 0 1 1"/>
+      </feComponentTransfer>
+      <!-- Invert so lines are black on white -->
+      <feColorMatrix in="highContrast" type="matrix"
+        values="-1 0 0 0 1
+                0 -1 0 0 1
+                0 0 -1 0 1
+                0 0 0 1 0"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="400" height="400" fill="#ffffff"/>
+  <image href="assets/img/usc.jpeg" x="20" y="20" width="360" height="360" preserveAspectRatio="xMidYMid meet" filter="url(#outlineBW)"/>
+</svg>

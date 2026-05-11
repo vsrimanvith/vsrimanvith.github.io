@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-label="University of Southern California logo">
+  <defs>
+    <linearGradient id="uscGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3c96a"/>
+      <stop offset="100%" stop-color="#d4a43d"/>
+    </linearGradient>
+  </defs>
+  <circle cx="110" cy="110" r="102" fill="#8c1515"/>
+  <circle cx="110" cy="110" r="90" fill="none" stroke="url(#uscGold)" stroke-width="8"/>
+  <path d="M66 136c18 16 70 16 88 0" fill="none" stroke="#f3c96a" stroke-width="6" stroke-linecap="round"/>
+  <rect x="78" y="86" width="64" height="30" rx="4" fill="#f7e3ad"/>
+  <path d="M78 101h64" stroke="#8c1515" stroke-width="4"/>
+  <path d="M110 58l10 20h-20z" fill="#f3c96a"/>
+  <path d="M96 72h28" stroke="#f3c96a" stroke-width="4" stroke-linecap="round"/>
+  <text x="110" y="164" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#f3c96a">USC</text>
+</svg>
